@@ -1,4 +1,4 @@
-![QuasiPiler Logo Light](logo/llogo.svg#gh-light-mode-only)![QuasiPiler Logo Dark](logo/dlogo.svg#gh-dark-mode-only)
+![QuasiPiler Logo Light](assets/brand/llogo.svg#gh-light-mode-only)![QuasiPiler Logo Dark](assets/brand/dlogo.svg#gh-dark-mode-only)
 ## _— the Hunchback Dragon of Compilers_
 
 
@@ -14,63 +14,3 @@
 
 This repo is my sanctuary under license — it begs mercy, not stars. I’ll bell when (or if) it works.
 “Documentation and Contributing” is a friendly suggestion, not a Martin Luther pinboard.
-
-## Setup and Installation
-
-### Requirements
-
-* **C++20** compiler
-* **cxxopts**: for command line options
-* **GTest**: for unit tests
-* **lcov**: for code coverage reports
-* **doxygen** and **graphviz**: for generating documentation
-
-### Building the Application
-
-1. Build with CMake in Release mode:
-    ```bash
-    $ cmake -DBUILD_TESTS=OFF -DCMAKE_BUILD_TYPE=Release -B build -S .
-    $ cmake --build build
-    ```
-2. Run the Application:
-    ```bash
-    $ qpiler [options] <inputfile>
-    ```
-   * `<inputfile>`: path to your QuasiCode file
-
-## QuasiLang
-
-**See [QuasiLang Syntax Guide](data/readme.md) for the full syntax guide.**
-
-**See [include](include/) and [src](src/) for implementation, and check [tests](tests/) for more examples.**
-
----
-
-**See `include/frontend` and `src/frontend` for implementation, and check `tests/frontend` for more examples.**
-
-
-## Documentation and Contributing
-
-To build and run tests, enable debug mode, or generate coverage reports:
-
-1. **Build with Debug and Coverage:**
-   ```bash
-   $ cmake -B build CMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE=Debug -DBUILD_TESTS=ON -DCOVERAGE=ON
-   ```
-2. **Generate Coverage Report and HTML:**
-   ```bash
-   $ cmake --build build --target coverage
-   ```
-
-For detailed documentation, see the [Documentation](https://ninjaro.github.io/QuasiPiler/doc/) and for the latest
-coverage report, see [Coverage](https://ninjaro.github.io/QuasiPiler/cov/).
-
-## Security Policy
-
-Please report any security issues using GitHub's private vulnerability reporting
-or by emailing [yaroslav.riabtsev@rwth-aachen.de](mailto:yaroslav.riabtsev@rwth-aachen.de).
-See the [security policy](.github/SECURITY.md) for full details.
-
-## License
-
-This project is open-source and available under the MIT License.
