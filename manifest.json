@@ -1,0 +1,17 @@
+{
+  "id": "quasipiler",
+  "description": "QuasiPiler compiler and expression-processing core.",
+  "cpp_standard": 20,
+  "facade": "core:core",
+  "artifacts": [
+    {
+      "id": "core:core",
+      "kind": "static_lib",
+      "name": "quasipiler",
+      "root": "core",
+      "owns": [
+        "."
+      ]
+    }
+  ]
+}
